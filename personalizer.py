@@ -1,7 +1,3 @@
-"""
-Core AI and personalization logic for the CRO Personalizer.
-Handles API calls, prompt engineering, HTML modification, and error recovery.
-"""
 import json
 import logging
 import time
