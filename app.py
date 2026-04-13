@@ -29,7 +29,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.title("🎯 Ad-to-Landing Page Personalizer")
+st.title(" Ad-to-Landing Page Personalizer")
 st.markdown("Align your landing page perfectly with your ad creative to maximize conversions using AI-powered CRO.")
 
 # Sidebar for Instructions & Configuration
@@ -43,20 +43,6 @@ with st.sidebar:
     """)
     
     st.divider()
-    st.header("⚙️ Configuration")
-    
-    if st.checkbox("Show API Setup"):
-        st.info("""
-        **Setup Required:**
-        
-        1. **OpenAI (Default):**
-           - Set `OPENAI_API_KEY` environment variable
-           - Or update `.env` file
-        
-        2. **Google Gemini:**
-           - Set `AI_PROVIDER=gemini` in `.env`
-           - Set `GEMINI_API_KEY` environment variable
-        """)
     
     hallucination_mode = st.select_slider(
         "Hallucination Detection",
